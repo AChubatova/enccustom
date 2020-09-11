@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.bitbucketCloudConnection
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.dockerRegistry
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
@@ -39,6 +40,12 @@ project {
             url = "https://docker.io"
             userName = "sdsd"
             password = "credentialsJSON:630c3de4-86af-458f-8a28-c54a0ba164fe"
+        }
+        bitbucketCloudConnection {
+            id = "PROJECT_EXT_5"
+            displayName = "new connection2"
+            key = "hgoiuopiu"
+            clientSecret = "credentialsJSON:3423daf3-cfb5-41e1-ba86-9b6b346e4b55"
         }
     }
 }
