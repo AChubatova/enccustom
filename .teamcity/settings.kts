@@ -40,13 +40,13 @@ project {
             name = "Docker Registry"
             url = "https://docker.io"
             userName = "sdsd"
-            password = "credentialsJSON:630c3de4-86af-458f-8a28-c54a0ba164fe"
+            password = "cks43d1649149ba173546510d505bfd6ce7T4MLdWuGGMwFK8Nab2wviA=="
         }
         bitbucketCloudConnection {
             id = "PROJECT_EXT_5"
             displayName = "new connection2"
             key = "hgoiuopiu"
-            clientSecret = "credentialsJSON:3423daf3-cfb5-41e1-ba86-9b6b346e4b55"
+            clientSecret = "cks43d1649149ba173546510d505bfd6ce7qZJhA/x1baq8bHD8WZAY2vMW41cEKsg+Z6DFIfnzVpw="
         }
         feature {
             id = "PROJECT_EXT_6"
@@ -78,6 +78,6 @@ object Customtestkey_1 : GitVcsRoot({
     url = "https://github.com/achubatova/composite"
     authMethod = password {
         userName = "AChubatova"
-        password = "credentialsJSON:a67309af-b2f3-45d2-91bd-40ec9bbed5b7"
+        password = "cks43d1649149ba173546510d505bfd6ce7C9d9jnaNyXaVHVs506zJmQ=="
     }
 })
