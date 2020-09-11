@@ -27,6 +27,8 @@ version = "2020.1"
 
 project {
 
+    buildType(Customtestkey)
+
     features {
         dockerRegistry {
             id = "PROJECT_EXT_4"
@@ -37,3 +39,7 @@ project {
         }
     }
 }
+
+object Customtestkey : BuildType({
+    name = "customtestkey"
+})
