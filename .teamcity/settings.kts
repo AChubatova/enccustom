@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.dockerRegistry
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -27,6 +28,8 @@ version = "2020.1"
 
 project {
 
+    vcsRoot(Customtestkey_1)
+
     buildType(Customtestkey)
 
     features {
@@ -42,4 +45,18 @@ project {
 
 object Customtestkey : BuildType({
     name = "customtestkey"
+
+    vcs {
+        root(Customtestkey_1)
+    }
+})
+
+object Customtestkey_1 : GitVcsRoot({
+    id("Customtestkey")
+    name = "customtestkey"
+    url = "https://github.com/achubatova/composite"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:a67309af-b2f3-45d2-91bd-40ec9bbed5b7"
+    }
 })
