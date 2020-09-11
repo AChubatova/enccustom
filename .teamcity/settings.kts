@@ -47,6 +47,13 @@ project {
             key = "hgoiuopiu"
             clientSecret = "credentialsJSON:3423daf3-cfb5-41e1-ba86-9b6b346e4b55"
         }
+        feature {
+            id = "PROJECT_EXT_6"
+            type = "JetBrains.SharedResources"
+            param("values", "jh")
+            param("name", "jhj")
+            param("type", "custom")
+        }
     }
 }
 
