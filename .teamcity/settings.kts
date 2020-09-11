@@ -61,6 +61,10 @@ project {
 object Customtestkey : BuildType({
     name = "customtestkey"
 
+    params {
+        password("a", "cks43d1649149ba173546510d505bfd6ce7C+6ryLvGpOoF8VbiF5bQ2A==")
+    }
+
     vcs {
         root(Customtestkey_1)
     }
